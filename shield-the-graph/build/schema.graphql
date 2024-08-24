@@ -1,0 +1,390 @@
+type CloseOrder @entity(immutable: true) {
+  id: Bytes!
+  holder: Bytes! # address
+  token: Bytes! # address
+  orderID: BigInt! # uint256
+  state: Int! # uint8
+  isBuy: Boolean! # bool
+  name: String! # string
+  number: BigInt! # uint256
+  fundingFeePaid: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  closePrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Deposit @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  token: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type OwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type SetRiskFundAddr @entity(immutable: true) {
+  id: Bytes!
+  oldAddr: Bytes! # address
+  newAddr: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Trade @entity(immutable: true) {
+  id: Bytes!
+  holder: Bytes! # address
+  token: Bytes! # address
+  orderID: BigInt! # uint256
+  isBuy: Boolean! # bool
+  name: String! # string
+  number: BigInt! # uint256
+  tradingFee: BigInt! # uint256
+  liquidationFee: BigInt! # uint256
+  fundingFee: BigInt! # uint256
+  fundingFeePaid: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Withdrawn @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  token: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type AddBroker @entity(immutable: true) {
+  id: Bytes!
+  invitee: Bytes! # address
+  inviter: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type BrokerOwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type SetKeeper @entity(immutable: true) {
+  id: Bytes!
+  keeper: Bytes! # address
+  flag: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type CreatePrivatePool @entity(immutable: true) {
+  id: Bytes!
+  creator: Bytes! # address
+  tokenAddr: Bytes! # address
+  poolAddr: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type CreatePublicPool @entity(immutable: true) {
+  id: Bytes!
+  creator: Bytes! # address
+  tokenAddr: Bytes! # address
+  poolAddr: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type LiquidityManagerOwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type AddLiquidityPrivate @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  amount: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type AddMargin @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  makerID: BigInt! # uint256
+  amount: BigInt! # uint256
+  margin: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type CloseInPrivatePool @entity(immutable: true) {
+  id: Bytes!
+  maker: Bytes! # address
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type MatchWithPrivatePool @entity(immutable: true) {
+  id: Bytes!
+  orderID: BigInt! # uint256
+  maker: Bytes! # address
+  makerID: BigInt! # uint256
+  marginAmount: BigInt! # uint256
+  marginFee: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type PrivatePoolOwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type RiskInPrivatePool @entity(immutable: true) {
+  id: Bytes!
+  maker: Bytes! # address
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type WithdrawPrivate @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  amount: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type AddLiquidityPublic @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  amount: BigInt! # uint256
+  minted: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Approval @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  spender: Bytes! # address
+  value: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type CloseInPublicPool @entity(immutable: true) {
+  id: Bytes!
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type MatchWithPublicPool @entity(immutable: true) {
+  id: Bytes!
+  orderID: BigInt! # uint256
+  makerID: BigInt! # uint256
+  marginAmount: BigInt! # uint256
+  marginFee: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type MoveToPublic @entity(immutable: true) {
+  id: Bytes!
+  orderID: BigInt! # uint256
+  profit: BigInt! # uint256
+  moveProfit: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  movePrice: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type PublicPoolOwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type RiskInPubicPool @entity(immutable: true) {
+  id: Bytes!
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Transfer @entity(immutable: true) {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  value: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type WithdrawPublic @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  amount: BigInt! # uint256
+  fromContract: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Order @entity {
+  id: String! # string
+  taker: Bytes! # address
+  token: Bytes! # address
+  isBuy: Boolean! # bool
+  name: String! # string
+  amount: BigInt! # uint256
+  tradingFee: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  openTimestamp: BigInt!
+  openBlockNumber: BigInt!
+  status: Int! # uint8
+  fundingFee: BigInt! # uint256
+  closePrice: BigInt! # uint256
+  closeTimestamp: BigInt!
+  closeBlockNumber: BigInt!
+  positionProfit: BigInt! # uint256
+  inviter: Bytes! # address
+  maker: Bytes! # address
+  makerMargin: BigInt! # uint256
+  makerMaintenanceMargin: BigInt! # uint256
+  usedPubPool: Boolean! #bool
+  movedToPubPool: Boolean! #bool
+  movedProfit: BigInt! # uint256
+}
+type Taker @entity {
+  id: Bytes! # address
+  inviter: Bytes! # address
+  inviteTimestamp: BigInt! # uint256
+  orderCount: BigInt! # uint256
+  orderCountClosed: BigInt! # uint256
+  orderCountProfit: BigInt! # uint256
+  lastOrderTimestamp: BigInt!
+  firstDepositTimestamp: BigInt!
+}
+type TakerTradingFee @entity {
+  id: Bytes!
+  taker: Bytes! # address
+  token: Bytes! # address
+  totalPaid: BigInt! # uint256
+}
+type TakerFund @entity {
+  id: Bytes!
+  taker: Bytes! # address
+  token: Bytes! # address
+  deposited: BigInt! # uint256
+  withdrawn: BigInt! # uint256
+  netDeposit: BigInt! # uint256
+}
+type Broker @entity {
+  id: Bytes! # address
+  referralCount: BigInt! # uint256
+  referralOrderCount: BigInt! # uint256
+  firstReferralTimestamp: BigInt!
+  lastReferralTimestamp: BigInt!
+}
+type BrokerTradingFee @entity {
+  id: Bytes!
+  broker: Bytes! # address
+  token: Bytes! # address
+  takerTotalPaid: BigInt! # uint256
+  totalReceived: BigInt! # uint256
+}
+type BrokerReward @entity(immutable: true) {
+  id: Bytes!
+  taker: Bytes! # address
+  broker: Bytes! # address
+  orderID: BigInt! # uint256
+  token: Bytes! # address
+  tradingFee: BigInt! # uint256
+  brokerPortion: BigInt! # uint256
+  reward: BigInt! # uint256
+  #
+  transactionHash: Bytes!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+}
+type UnderlyingPosition @entity {
+  id: String!
+  underlying: String!
+  token: Bytes! # address
+  amount: BigInt! # uint256
+}
+type MakerIndexOrderIdMap @entity(immutable: true) {
+  id: Bytes!
+  orderID: BigInt! # uint256
+  privatePool: Bytes! # address
+  makerIndex: BigInt! # uint256
+}
+type PrivatePoolInstance @entity {
+  id: Bytes! # address
+  underlying: String!
+  token: Bytes! # address
+  createTimestamp: BigInt! # uint256
+  createBlockNumber: BigInt! # uint256
+}
+type PrivatePoolOrder @entity {
+  id: String!
+  makerID: BigInt! # uint256
+  pool: Bytes! # address
+  maker: Bytes! # address
+  isActive: Boolean! # bool
+}
+type PublicPoolInstance @entity(immutable: true) {
+  id: Bytes! # address
+  token: Bytes! # address
+  createTimestamp: BigInt! # uint256
+  createBlockNumber: BigInt! # uint256
+}

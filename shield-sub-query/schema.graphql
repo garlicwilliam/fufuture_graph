@@ -1,0 +1,322 @@
+type CloseOrder @entity {
+  id: ID!
+  holder: String! # address
+  token: String! # address
+  orderID: BigInt! # uint256
+  state: Int! # uint8
+  isBuy: Boolean! # bool
+  name: String! # string
+  number: BigInt! # uint256
+  fundingFeePaid: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  closePrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+type Deposit @entity {
+  id: ID!
+  user: String! # address
+  token: String! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type Trade @entity {
+  id: ID!
+  holder: String! # address
+  token: String! # address
+  orderID: BigInt! # uint256
+  isBuy: Boolean! # bool
+  name: String! # string
+  number: BigInt! # uint256
+  tradingFee: BigInt! # uint256
+  liquidationFee: BigInt! # uint256
+  fundingFee: BigInt! # uint256
+  fundingFeePaid: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type Withdrawn @entity {
+  id: ID!
+  user: String! # address
+  token: String! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type AddBroker @entity {
+  id: ID!
+  invitee: String! # address
+  inviter: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type CreatePrivatePool @entity {
+  id: ID!
+  creator: String! # address
+  tokenAddr: String! # address
+  poolAddr: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type CreatePublicPool @entity {
+  id: ID!
+  creator: String! # address
+  tokenAddr: String! # address
+  poolAddr: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type AddLiquidityPrivate @entity {
+  id: ID!
+  account: String! # address
+  amount: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type AddMargin @entity {
+  id: ID!
+  account: String! # address
+  makerID: BigInt! # uint256
+  amount: BigInt! # uint256
+  margin: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type CloseInPrivatePool @entity {
+  id: ID!
+  maker: String! # address
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type MatchWithPrivatePool @entity {
+  id: ID!
+  orderID: BigInt! # uint256
+  maker: Bytes! # address
+  makerID: BigInt! # uint256
+  marginAmount: BigInt! # uint256
+  marginFee: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type RiskInPrivatePool @entity {
+  id: ID!
+  maker: String! # address
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type WithdrawPrivate @entity {
+  id: ID!
+  account: String! # address
+  amount: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type AddLiquidityPublic @entity {
+  id: ID!
+  account: String! # address
+  amount: BigInt! # uint256
+  minted: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type CloseInPublicPool @entity {
+  id: ID!
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type MatchWithPublicPool @entity {
+  id: ID!
+  orderID: BigInt! # uint256
+  makerID: BigInt! # uint256
+  marginAmount: BigInt! # uint256
+  marginFee: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type MoveToPublic @entity {
+  id: ID!
+  orderID: BigInt! # uint256
+  profit: BigInt! # uint256
+  moveProfit: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  movePrice: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type RiskInPubicPool @entity {
+  id: ID!
+  makerID: BigInt! # uint256
+  orderID: BigInt! # uint256
+  userProfit: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type Transfer @entity {
+  id: ID!
+  from: String! # address
+  to: String! # address
+  value: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+type WithdrawPublic @entity {
+  id: ID!
+  account: String! # address
+  amount: BigInt! # uint256
+  fromContract: String! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: String!
+}
+
+type Order @entity {
+  id: String! # string
+  taker: String! # address
+  token: String! # address
+  isBuy: Boolean! # bool
+  name: String! # string
+  amount: BigInt! # uint256
+  tradingFee: BigInt! # uint256
+  openPrice: BigInt! # uint256
+  openTimestamp: BigInt!
+  openBlockNumber: BigInt!
+  status: Int! # uint8
+  fundingFee: BigInt! # uint256
+  closePrice: BigInt! # uint256
+  closeTimestamp: BigInt!
+  closeBlockNumber: BigInt!
+  positionProfit: BigInt! # uint256
+  inviter: String! # address
+  maker: String! # address
+  makerMargin: BigInt! # uint256
+  makerMaintenanceMargin: BigInt! # uint256
+  usedPubPool: Boolean! #bool
+  movedToPubPool: Boolean! #bool
+  movedProfit: BigInt! # uint256
+}
+type Taker @entity {
+  id: ID! # address
+  inviter: String! # address
+  inviteTimestamp: BigInt! # uint256
+  orderCount: BigInt! # uint256
+  orderCountClosed: BigInt! # uint256
+  orderCountProfit: BigInt! # uint256
+  lastOrderTimestamp: BigInt!
+  firstDepositTimestamp: BigInt!
+}
+type TakerTradingFee @entity {
+  id: ID!
+  taker: String! # address
+  token: String! # address
+  totalPaid: BigInt! # uint256
+}
+type TakerFund @entity {
+  id: ID!
+  taker: String! # address
+  token: String! # address
+  deposited: BigInt! # uint256
+  withdrawn: BigInt! # uint256
+  netDeposit: BigInt! # uint256
+}
+type Broker @entity {
+  id: ID! # address
+  referralCount: BigInt! # uint256
+  referralOrderCount: BigInt! # uint256
+  firstReferralTimestamp: BigInt!
+  lastReferralTimestamp: BigInt!
+}
+type BrokerTradingFee @entity {
+  id: ID!
+  broker: String! # address
+  token: String! # address
+  takerTotalPaid: BigInt! # uint256
+  totalReceived: BigInt! # uint256
+}
+type BrokerReward @entity {
+  id: ID!
+  taker: String! # address
+  broker: String! # address
+  orderID: BigInt! # uint256
+  token: String! # address
+  tradingFee: BigInt! # uint256
+  brokerPortion: BigInt! # uint256
+  reward: BigInt! # uint256
+  #
+  transactionHash: String!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+}
+type UnderlyingPosition @entity {
+  id: String!
+  underlying: String!
+  token: String! # address
+  amount: BigInt! # uint256
+}
+type MakerIndexOrderIdMap @entity {
+  id: ID!
+  orderID: BigInt! # uint256
+  privatePool: String! # address
+  makerIndex: BigInt! # uint256
+}
+type PrivatePoolInstance @entity {
+  id: ID! # address
+  underlying: String!
+  token: String! # address
+  createTimestamp: BigInt! # uint256
+  createBlockNumber: BigInt! # uint256
+}
+type PrivatePoolOrder @entity {
+  id: String!
+  makerID: BigInt! # uint256
+  pool: String! # address
+  maker: String! # address
+  isActive: Boolean! # bool
+}
+type PublicPoolInstance @entity {
+  id: ID! # address
+  token: String! # address
+  createTimestamp: BigInt! # uint256
+  createBlockNumber: BigInt! # uint256
+}

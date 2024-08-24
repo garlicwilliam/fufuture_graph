@@ -1,0 +1,417 @@
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:14.533Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "subql-node",
+  "message": "Current @subql/node-ethereum version is 4.5.0"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:14.701Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Starting Nest application..."
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.139Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "ProjectUpgradeService",
+  "message": "Projects: {\n  \"26466500\": \"ipfs://QmZYUZ5Z439E4MpTC7ciXbvFxJJo6qb4tUbZCXMQiaV7UW\"\n}"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.197Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "AppModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.197Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "ConfigureModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.198Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "PrometheusModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.198Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "DiscoveryModule dependencies initialized"
+}
+{
+  "level": "warn",
+  "timestamp": "2024-06-12T21:19:18.199Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "api",
+  "message": "skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance."
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.200Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "api.ethereum",
+  "message": "Api host: lb.drpc.org, method: wss"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.207Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "EventEmitterModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.207Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "ScheduleModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.279Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "DbModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.280Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "AdminModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.280Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "MetaModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.752Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "indexer",
+  "message": "indexer manager start"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.753Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "FetchModule dependencies initialized"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.764Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "HealthController {/health}:"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.767Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/health, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.767Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "ReadyController {/ready}:"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.767Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/ready, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.767Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "MetaController {/meta}:"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.768Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/meta, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.768Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "PrometheusController {/metrics}:"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.768Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/metrics, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.768Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "AdminController {/admin}:"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.769Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/index_history/range, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.769Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/index_history/forks, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.770Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/index_history/block/:blockHeight, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.770Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/poi/range, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.771Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/poi, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.772Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/rewind, POST} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.772Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Mapped {/admin/db_size, GET} route"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.783Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "nestjs",
+  "message": "Nest application successfully started"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.812Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "StoreService",
+  "message": "Historical state is enabled"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:18.821Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "dynamic-ds",
+  "message": "Loaded 0 dynamic datasources"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.282Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "UnfinalizedBlocks",
+  "message": "Unfinalized blocks is enabled"
+}
+{
+  "level": "warn",
+  "timestamp": "2024-06-12T21:19:19.594Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "api",
+  "message": "skipTransactions is disabled, the project contains only event handlers, it could be enabled to improve indexing performance."
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.946Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468089...26468118, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.953Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468119...26468148, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.954Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468149...26468178, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.954Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468179...26468208, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:19.955Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "subql-node",
+  "message": "Node started on port: 3000"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:20.955Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468209...26468238, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:20.955Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468239...26468268, total 30 blocks"
+}
+{
+  "level": "info",
+  "timestamp": "2024-06-12T21:19:21.955Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "message": "Enqueueing blocks 26468269...26468298, total 30 blocks"
+}
+{
+  "level": "warn",
+  "timestamp": "2024-06-12T21:19:22.088Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "api.ethereum",
+  "message": "Failed to parse log data: Failed to load datasource asset ipfs://QmQy8GTiZET3gfh1dJZXJJbBqVHyLu4btwQujsNXDA1ZUg"
+}
+{
+  "level": "warn",
+  "timestamp": "2024-06-12T21:19:22.093Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "sandbox",
+  "message": "Unable to find a source map. Rebuild your project with latest @subql/cli to generate a source map."
+}
+{
+  "level": "warn",
+  "timestamp": "2024-06-12T21:19:22.093Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "sandbox",
+  "message": "Logging unresolved stack trace."
+}
+{
+  "level": "error",
+  "timestamp": "2024-06-12T21:19:22.093Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "payload": {
+    "type": "error",
+    "name": "Error",
+    "message": "Cannot find module 'ipfs://QmePnt6YnoWJqUnSRUzTy61qjJbxbDdmofYPPj5sMGZEvG'\nRequire stack:\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.service.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.controller.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/init.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/main.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/bin/run",
+    "stack": "Error: Cannot find module 'ipfs://QmePnt6YnoWJqUnSRUzTy61qjJbxbDdmofYPPj5sMGZEvG'\nRequire stack:\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.service.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.controller.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/init.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/main.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/bin/run\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n    at Function.resolve (node:internal/modules/helpers:188:19)\n    at CustomResolver.resolve [as customResolver] (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js:42:36)\n    at CustomResolver.customResolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver-compat.js:76:25)\n    at CustomResolver.resolveFull (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:313:12)\n    at CustomResolver.resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:121:15)\n    at resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/nodevm.js:317:21)\n    at VM2 Wrapper.apply (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/bridge.js:485:11)\n    at requireImpl (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:90:19)\n    at require (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:171:10)"
+  },
+  "message": "Failed to index block at height 26468146 handleCreatePublicPool(Error: Cannot find module 'ipfs://QmePnt6YnoWJqUnSRUzTy61qjJbxbDdmofYPPj5sMGZEvG'\nRequire stack:\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.service.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.controller.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/init.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/main.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/bin/run\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n    at Function.resolve (node:internal/modules/helpers:188:19)\n    at CustomResolver.resolve [as customResolver] (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js:42:36)\n    at CustomResolver.customResolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver-compat.js:76:25)\n    at CustomResolver.resolveFull (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:313:12)\n    at CustomResolver.resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:121:15)\n    at resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/nodevm.js:317:21)\n    at VM2 Wrapper.apply (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/bridge.js:485:11)\n    at requireImpl (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:90:19)\n    at require (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:171:10))"
+}
+{
+  "level": "error",
+  "timestamp": "2024-06-12T21:19:22.094Z",
+  "pid": 7,
+  "hostname": "subquery-21025-indexer-deployment-68f77bc459-rfx9d",
+  "category": "BlockDispatcherService",
+  "payload": {
+    "type": "error",
+    "name": "Error",
+    "message": "Failed to enqueue fetched block to process",
+    "stack": "Error: Failed to enqueue fetched block to process\n    at /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/blockDispatcher/block-dispatcher.js:144:50",
+    "cause": {
+      "type": "error",
+      "name": "Error",
+      "message": "Cannot find module 'ipfs://QmePnt6YnoWJqUnSRUzTy61qjJbxbDdmofYPPj5sMGZEvG'\nRequire stack:\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.service.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.controller.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/init.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/main.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/bin/run",
+      "stack": "Error: Cannot find module 'ipfs://QmePnt6YnoWJqUnSRUzTy61qjJbxbDdmofYPPj5sMGZEvG'\nRequire stack:\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.service.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/health.controller.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/meta/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/index.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/init.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/dist/main.js\n- /usr/local/lib/node_modules/@subql/node-ethereum/bin/run\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)\n    at Function.resolve (node:internal/modules/helpers:188:19)\n    at CustomResolver.resolve [as customResolver] (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/@subql/node-core/dist/indexer/sandbox.js:42:36)\n    at CustomResolver.customResolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver-compat.js:76:25)\n    at CustomResolver.resolveFull (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:313:12)\n    at CustomResolver.resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/resolver.js:121:15)\n    at resolve (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/nodevm.js:317:21)\n    at VM2 Wrapper.apply (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/bridge.js:485:11)\n    at requireImpl (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:90:19)\n    at require (/usr/local/lib/node_modules/@subql/node-ethereum/node_modules/vm2/lib/setup-node-sandbox.js:171:10)"
+    }
+  }
+}

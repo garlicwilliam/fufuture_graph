@@ -1,0 +1,58 @@
+{
+  "bsc": {
+    "PerpetualOptions": {
+      "address": "0x1e933E0957e6236E519e64CD13f967146Fcb4755",
+      "startBlock": 33366601
+    },
+    "Broker": {
+      "address": "0x787eCb23Cd23D52200fB5cb010d8f9D12c398cF9",
+      "startBlock": 33366601
+    },
+    "LiquidityManager": {
+      "address": "0x0CB5274a8Ff86b7b750933B09aba8B5eb3660977",
+      "startBlock": 33366601
+    }
+  },
+  "arbitrum-one": {
+    "PerpetualOptions": {
+      "address": "0x1e933E0957e6236E519e64CD13f967146Fcb4755",
+      "startBlock": 162985222
+    },
+    "Broker": {
+      "address": "0x787eCb23Cd23D52200fB5cb010d8f9D12c398cF9",
+      "startBlock": 162985151
+    },
+    "LiquidityManager": {
+      "address": "0x0CB5274a8Ff86b7b750933B09aba8B5eb3660977",
+      "startBlock": 162984841
+    }
+  },
+  "matic": {
+    "PerpetualOptions": {
+      "address": "0xe52adac17dcfc9be6975ce99c1637e38336c8931",
+      "startBlock": 55769216
+    },
+    "Broker": {
+      "address": "0x502c7c64692b94c6c8f4d755878cc50e768566ce",
+      "startBlock": 55768592
+    },
+    "LiquidityManager": {
+      "address": "0xb711ba37fa74b99e70c27e82def0b15a50ac7a9e",
+      "startBlock": 55768639
+    }
+  },
+  "base": {
+    "PerpetualOptions": {
+      "address": "0xB78356C8030A76b355C752B76225e19892982fC7",
+      "startBlock": 13545396
+    },
+    "Broker": {
+      "address": "0x502c7c64692b94C6c8F4D755878cc50E768566cE",
+      "startBlock": 13544768
+    },
+    "LiquidityManager": {
+      "address": "0xB711ba37Fa74b99E70C27E82DEF0B15A50AC7A9e",
+      "startBlock": 13545357
+    }
+  }
+}

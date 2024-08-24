@@ -1,0 +1,16 @@
+{
+  "bsc": {
+    "PerpetualOptions": {
+      "address": "0xab2CC8EbA51c9Dd60Ab9182f9B9e3b1ECbde4400",
+      "startBlock": 33128615
+    },
+    "Broker": {
+      "address": "0x4366B94FfbEe751889b9B621377614d71F357001",
+      "startBlock": 33128609
+    },
+    "LiquidityManager": {
+      "address": "0xCCFb97c9f578d1b3a554DEf304D57b0C9C7EA160",
+      "startBlock": 33128579
+    }
+  }
+}

@@ -1,0 +1,174 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: PerpetualOptions
+    network: base
+    source:
+      abi: PerpetualOptions
+      address: "0xB78356C8030A76b355C752B76225e19892982fC7"
+      startBlock: 13545396
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - CloseOrder
+        - Deposit
+        - OwnershipTransferred
+        - SetRiskFundAddr
+        - Trade
+        - Withdrawn
+      abis:
+        - name: PerpetualOptions
+          file: ./abis/PerpetualOptions.json
+      eventHandlers:
+        - event: CloseOrder(indexed address,indexed
+            address,uint256,uint8,bool,string,uint256,uint256,uint256,uint256)
+          handler: handleCloseOrder
+        - event: Deposit(address,address,uint256)
+          handler: handleDeposit
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: SetRiskFundAddr(address,address)
+          handler: handleSetRiskFundAddr
+        - event: Trade(indexed address,indexed
+            address,uint256,bool,string,uint256,uint256,uint256,uint256,uint256,uint256)
+          handler: handleTrade
+        - event: Withdrawn(address,address,uint256)
+          handler: handleWithdrawn
+      file: ./src/perpetual-options.ts
+  - kind: ethereum
+    name: Broker
+    network: base
+    source:
+      abi: Broker
+      address: "0x502c7c64692b94C6c8F4D755878cc50E768566cE"
+      startBlock: 13544768
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - AddBroker
+        - BrokerOwnershipTransferred
+        - SetKeeper
+      abis:
+        - name: Broker
+          file: ./abis/Broker.json
+      eventHandlers:
+        - event: AddBroker(address,address)
+          handler: handleAddBroker
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: SetKeeper(address,bool)
+          handler: handleSetKeeper
+      file: ./src/broker.ts
+  - kind: ethereum
+    name: LiquidityManager
+    network: base
+    source:
+      abi: LiquidityManager
+      address: "0xB711ba37Fa74b99E70C27E82DEF0B15A50AC7A9e"
+      startBlock: 13545357
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - CreatePrivatePool
+        - CreatePublicPool
+        - LiquidityManagerOwnershipTransferred
+      abis:
+        - name: LiquidityManager
+          file: ./abis/LiquidityManager.json
+      eventHandlers:
+        - event: CreatePrivatePool(indexed address,indexed address,indexed address)
+          handler: handleCreatePrivatePool
+        - event: CreatePublicPool(indexed address,indexed address,indexed address)
+          handler: handleCreatePublicPool
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      file: ./src/liquidity-manager.ts
+templates:
+  - kind: ethereum
+    name: PrivatePool
+    network: base
+    source:
+      abi: PrivatePool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - AddLiquidityPrivate
+        - AddMargin
+        - CloseInPrivatePool
+        - MatchWithPrivatePool
+        - PrivatePoolOwnershipTransferred
+        - RiskInPrivatePool
+        - WithdrawPrivate
+      abis:
+        - name: PrivatePool
+          file: ./abis/PrivatePool.json
+      eventHandlers:
+        - event: AddLiquidity(indexed address,uint256)
+          handler: handleAddLiquidity
+        - event: AddMargin(indexed address,uint256,uint256,uint256)
+          handler: handleAddMargin
+        - event: CloseInPrivatePool(address,uint256,uint256,uint256)
+          handler: handleCloseInPrivatePool
+        - event: MatchWithPrivatePool(uint256,address,uint256,uint256,uint256)
+          handler: handleMatchWithPrivatePool
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: RiskInPrivatePool(address,uint256,uint256,uint256)
+          handler: handleRiskInPrivatePool
+        - event: Withdraw(indexed address,uint256)
+          handler: handleWithdraw
+      file: ./src/private-pool.ts
+  - kind: ethereum
+    name: PublicPool
+    network: base
+    source:
+      abi: PublicPool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - AddLiquidityPublic
+        - Approval
+        - CloseInPublicPool
+        - MatchWithPublicPool
+        - MoveToPublic
+        - PublicPoolOwnershipTransferred
+        - RiskInPubicPool
+        - Transfer
+        - WithdrawPublic
+      abis:
+        - name: PublicPool
+          file: ./abis/PublicPool.json
+      eventHandlers:
+        - event: AddLiquidity(indexed address,uint256,uint256)
+          handler: handleAddLiquidity
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: CloseInPublicPool(uint256,uint256,uint256)
+          handler: handleCloseInPublicPool
+        - event: MatchWithPublicPool(uint256,uint256,uint256,uint256)
+          handler: handleMatchWithPublicPool
+        - event: MoveToPublic(uint256,uint256,uint256,uint256,uint256)
+          handler: handleMoveToPublic
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: RiskInPubicPool(uint256,uint256,uint256)
+          handler: handleRiskInPubicPool
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: Withdraw(indexed address,uint256)
+          handler: handleWithdraw
+      file: ./src/public-pool.ts
